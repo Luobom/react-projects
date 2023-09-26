@@ -9,9 +9,9 @@ interface cardProps {
 export function Card({price, title, image} : cardProps){
     return(
         <div className="card">
-            <img/>
-            <h2></h2>
-            <p><b>Valor:</b></p>
+            <img src={image}/>
+            <h2>{title}</h2>
+            <p><b>Valor: </b>{price}</p>
         </div>
     )
 }
