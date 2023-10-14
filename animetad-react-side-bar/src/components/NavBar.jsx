@@ -1,6 +1,9 @@
-const NavBar = () => {
+import logo from './logo.webp';
+
+const NavBar = ({ show }) => {
     return (
-        <div className="sidenav">
+        <div className={show ? 'sidenav active' : 'sidenav'}>
+            <img src={logo} alt='Logo' className='logo' />
             <ul>
                 <li>
                     <a href="/">Home</a>

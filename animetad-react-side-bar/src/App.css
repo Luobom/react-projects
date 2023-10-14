@@ -21,7 +21,16 @@ header {
   position: absolute;
   height: 95vh;
   padding: 0 30px;
-  transition: all 1s;
+  left: -100%;
+  transition: all 1.0s;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.logo {
+  width: 100px;
 }
 
 ul {
@@ -30,6 +39,7 @@ ul {
 
 ul li {
   list-style-type: none;
+  margin: 10px 0;
 }
 
 ul li a {
@@ -44,4 +54,18 @@ ul li a {
 ul li a:hover,
 ul li a.active {
   background: #172b4d;
+}
+
+header svg {
+  font-size: 40px;
+}
+
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #011627;
 }
