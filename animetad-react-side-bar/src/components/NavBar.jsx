@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom';
 import logo from './logo.webp';
+import { FiHome } from 'react-icons/fi';
+import { BsPersonFill } from 'react-icons/bs'
+import { MdContactPhone } from 'react-icons/md'
 
 const NavBar = ({ show }) => {
     return (
@@ -6,17 +10,22 @@ const NavBar = ({ show }) => {
             <img src={logo} alt='Logo' className='logo' />
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/"><FiHome />Home</Link>
                 </li>
                 <li>
-                    <a href="/">About us</a>
+                    <Link to="/About"><BsPersonFill />About us</Link>
                 </li>
                 <li>
-                    <a href="/">Contact us</a>
+                    <Link to="/Contact"><MdContactPhone />Contact us</Link>
                 </li>
             </ul>
+            {/*    <nav>
+        <Link to="/">Home</Link><br/>
+        <Link to="/About">About</Link> <br/>
+        <Link to="/Contact">Contact</Link>      
+    </nav>            */}
         </div>
     )
 }
 
-export default NavBar
+export default NavBar;
