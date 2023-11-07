@@ -1,5 +1,4 @@
-# React Hooks - useStage - Youtube video channel - Matheus Battisti
+# React Hooks - useState - Youtube video channel - Matheus Battisti
 
 link
-https://youtu.be/3m3UaEvQkhQ?si=7EmUnusHlBDMUWXC
-
+https://youtu.be/3m3UaEvQkhQ?si=jCZEarczcMRon5is
